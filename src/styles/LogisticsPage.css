@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap');
+
+
+.form-container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.form-container input {
+  margin-bottom: 20px;
+  border: 1px solid var(--freshleaf-color);
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.veh-price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.border {
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  border: 1px solid var(--freshleaf-color);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-button {
+  width: 80%;
+  margin: auto;
+}
+
+.request-button {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-family: inherit;
+  background-color: var(--deepleaf-color);
+  color: var(--harvestcream-color);
+  transition: var(--transition);
+}
+
+.request-button:hover {
+  background-color: var(--freshleaf-color);
+  color: var(--harvestcream-color);
+  filter: brightness(1.2);
+}

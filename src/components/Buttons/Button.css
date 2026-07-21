@@ -1,0 +1,16 @@
+.button{
+  margin-top: 5rem;
+  width: 20rem;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: var(--deepleaf-color);
+  color: var(--harvestcream-color);
+  font-size: 1.5rem;
+  border: none;
+  transition: var(--transition);
+}
+
+.button:hover{
+  background-color: var(--vineripe-color);
+  /* color: var(--vineripe-color); */
+}

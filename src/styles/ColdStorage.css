@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+.nav-bar {
+  padding: 5px 0;
+  background-color: var(--freshleaf-color);
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-list li {
+  list-style: none;
+}
+
+.navbar-img {
+  width: 35px;
+  height: 35px;
+}
+
+.content-box {
+  width: min(80%, 1200px);
+  margin: 50px auto 0 auto;
+}
+
+.header-title  {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-para {
+  font-size: 1.2rem;
+}
+
+.facility-grid {
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+.facility-search {
+  border: 1px solid var(--freshleaf-color);
+  width: 90%;
+  height: 25px;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.facility-search img {
+  width: 25px;
+}
+
+.facility-search select {
+  width: 90%;
+  height: 20px;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+
+.facility-card {
+  /* grid-column: 1 / span 2; */
+  margin-top: 20px;
+  border: 1px solid var(--freshleaf-color);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-img img {
+  width: 100px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.facility-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-button {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-family: inherit;
+  background-color: var(--deepleaf-color);
+  color: var(--harvestcream-color);
+  transition: var(--transition);
+}
+
+.book-button:hover {
+  background-color: var(--freshleaf-color);
+  color: var(--harvestcream-color);
+  filter: brightness(1.2);
+}
+
+
+@media (min-width: 600px) {
+  .facility-search {
+    flex-direction: row;
+  }
+  
+  .facility-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .facility-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

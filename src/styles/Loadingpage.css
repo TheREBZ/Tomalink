@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+body.loading-body{
+  background-color: var(--bg-color);
+  color: var(--deepleaf-color);
+  font-family: "Poppins", sans-serif;
+  max-height: 100vh;
+}
+
+.container{
+  width: min(90%, 1800px);
+  margin-inline: auto;
+  padding: 40px 0;
+  min-height: 100vh;
+}
+
+.loadpage-header{
+  width: min(100%, 800px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.loadpage-logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 12px var(--freshleaf-color), 2px 0 12px var(--freshleaf-color);
+}
+
+.loadpage-title{
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-size: 6rem;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.loadpage{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.loading-wheel {
+  margin: -75px auto 0 auto;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 3px dashed var(--vineripe-color);
+  animation: rotateWheel 12s linear infinite;
+  box-shadow: 0 0 50px var(--freshleaf-color);
+}
+
+
+.wheel {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: var(--blushpeach-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation: counterRotate 12s linear infinite;
+  transition: var(--transition);
+}
+
+.left-up {
+  top: 0;
+  left: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.right-up {
+  top: 0;
+  right: 10px;
+  transform: translate(50%, -50%);
+}
+
+.right-down {
+  bottom: 15px;
+  right: 10px;
+  transform: translate(-50%, 50%);
+}
+
+.left-down {
+  bottom: 15px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.wheel img{
+  width: 80%;
+}
+
+.tagline{
+  position: relative;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  top: 220px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: var(--deepleaf-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Wheel rotates */
+
+@keyframes rotateWheel {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Block rotates opposite direction */
+
+@keyframes counterRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+
+
+/* .tomalink-logo{
+  width: 250px;
+}
+
+.loading-wheel{
+  background-color: var(--freshleaf-color);
+  width: 400px;
+  height: 400px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.wheel{
+  width: 100px;
+  height: 100px;
+  background-color: var(--vineripe-color);
+}
+
+.left-up{
+  position: relative;
+  left: 75px;
+  top: 50px;
+  border-top-left-radius: 50px;
+}
+
+.right-up{
+  position: relative;
+  top: -50px;
+  left: 220px;
+  border-top-right-radius: 50px;
+}
+
+.right-down{
+  position: relative;
+  left: 220px;
+  top: 25px;
+  border-bottom-right-radius: 50px;
+}
+
+.left-down{
+  position: relative;
+  top: -75px;
+  left: 75px;
+  border-bottom-left-radius: 50px;
+} */

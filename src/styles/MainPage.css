@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+    --deepleaf-color: #14532d;
+    --freshleaf-color: #4caf50;
+    --vineripe-color: #ff5a5f;
+    --sunsetorange-color: #ff8a3d;
+    --blushpeach-color: #ffe1d6;
+    --harvestcream-color: #fff1e6;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --poppins: "Roboto", sans-serif;
+    --transition: transform 0.3s ease;
+}
+
+.head{
+  height: 60px;
+  background-color: var(--freshleaf-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.head p:hover{
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.head-icons{
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.greet-user{
+  font-family: var(--poppins);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px 100px;
+}
+
+.card-content{
+  width: 250px;
+  height: 170px;
+  font-family: var(--poppins);
+  font-size: 18px;
+  border: 2px solid var(--freshleaf-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.card{
+  display: flex;
+  margin: 60px 80px;
+  justify-content: center;
+}
+
+.card-content p{
+  font-weight: 300;
+}
+
+.stats-content{
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.actions-marketprice-container{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 40px 0;
+}
+
+.market-price-container{
+  font-family: var(--poppins);
+  font-weight: 300;
+  border: 2px solid var(--freshleaf-color);
+  width: 400px;
+  height: 250px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.market-price-container span{
+  font-weight: 800;
+}
+
+.market-price-container button{
+  height: 30px;
+  width: 150px;
+  background-color: var(--deepleaf-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.market-price-container:hover{
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  background-color: var(--deepleaf-color);
+  transform: translateY(4px);
+  transition: .5s;
+}
+
+.market-price-container button:hover{
+  border: 8px;
+  background-color: var(--white-color);
+  color: var(--deepleaf-color);
+  transform: translateY(4px);
+  transition: .5s;
+}
+
+.main-action-details-container{
+width: 480px;
+height: 400px;
+border: 2px solid var(--freshleaf-color);
+display: flex;
+flex-direction: column;
+gap: 5px;
+padding: 20px;
+font-family: var(--poppins);
+font-size: 20px;
+font-weight: 300;
+border-radius: 10px;
+}
+
+.main-action-details-container:hover{
+color: var(--white-color);
+border: 1px solid var(--white-color);
+background-color: var(--deepleaf-color);
+transform: translateY(4px);
+transition: .5s;  
+}
+
+.actions-details-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 150px 150px;
+  gap: 30px;
+  height: 100%; 
+}
+
+.actions{
+border: 2px solid var(--freshleaf-color);
+width: 140px;
+height: 140px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+text-align: center;
+font-size: 14px;
+font-family: var(--poppins);
+border-radius: 30px;
+}
+
+.actions:hover{
+border: 8px;
+background-color: var(--white-color);
+color: var(--deepleaf-color);
+transform: translateY(4px);
+transition: .5s;
+cursor: pointer;
+}
+
+.action-icon{
+  font-size: 26px;
+  color: var(--vineripe-color);
+}
